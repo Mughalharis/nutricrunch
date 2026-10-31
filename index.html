@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NutriCrunch | Khalis Mewa, Khandani Zaiqa</title>
+<meta name="description" content="NutriCrunch: premium dry fruits, nuts, dates and handmade gift boxes delivered across Pakistan.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hind:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="images/logo-mark.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="announce">
+  FREE SHIPPING ON ORDERS OVER RS. 5,000 <span class="urdu">پانچ ہزار روپے سے اوپر ڈیلیوری مفت</span>
+</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a href="#top" class="brand" aria-label="NutriCrunch home">
+      <span class="brand-mark"><img src="images/logo-mark.png" alt="" width="60" height="44"></span>
+      <span class="brand-text">
+        <span class="brand-name">NutriCrunch</span>
+        <span class="brand-ur">نیوٹری کرنچ · خشک میوہ جات</span>
+      </span>
+    </a>
+    <nav class="menu" aria-label="Main">
+      <a href="#best">Best Sellers</a>
+      <a href="#gifts">Gift Boxes</a>
+      <a href="#shop">All Mewa</a>
+      <a href="#how">How to Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" id="openCart" aria-label="Open cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+      <span class="lbl">Tokri</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile menu" hidden>
+  <a href="#best">Best Sellers</a>
+  <a href="#gifts">Gift Boxes</a>
+  <a href="#categories">Categories</a>
+  <a href="#shop">All Mewa</a>
+  <a href="#how">How to Order</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main id="top">
+
+<!-- Hero -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Dry fruits · Nuts · Gift boxes · Delivered across Pakistan</span>
+      <h1>Premium Mewa,<br><em>Thoughtfully Gifted</em></h1>
+      <div class="hero-ur">خالص میوہ، خاندانی ذائقہ</div>
+      <p class="lead">Almonds, walnuts, pistachios, cashews, figs and dates in 250g, 500g and 1kg NutriCrunch pouches, or arranged in a gift box with your own card message.</p>
+      <div class="cta-row">
+        <a href="#gifts" class="btn btn-brass btn-lg">Shop Gift Boxes</a>
+        <a href="#best" class="btn btn-line btn-lg">See Best Sellers</a>
+      </div>
+    </div>
+    <div class="mehrab">
+      <img id="heroImg" alt="NutriCrunch black pouch of mixed dry fruits on a table" fetchpriority="high">
+      <div class="sale-seal"><b>Free</b><span>delivery over Rs. 5,000</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Trust strip -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+      <div><b>Free delivery</b><span>On orders over Rs. 5,000</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></svg>
+      <div><b>NutriCrunch pouches</b><span>250g, 500g and 1kg</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M3 12h18M12 8v12M12 8c-2-4-6-3-5 0M12 8c2-4 6-3 5 0"/></svg>
+      <div><b>Gift boxes</b><span>Eid, shaadi and family</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-13.400 7.800L3 21l1.300-4.400A9 9 0 1121 12z"/></svg>
+      <div><b>Order on WhatsApp</b><span>0339 8402017</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Urdu quote strip -->
+<div class="quotes" aria-label="Urdu sayings about dry fruits">
+  <div class="quote-track" id="quoteTrack"></div>
+</div>
+
+<!-- Best sellers -->
+<section class="best" id="best">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Best Sellers</span>
+      <h2>Our Most Ordered Mewa</h2>
+      <div class="urdu">سب سے زیادہ پسند کیا جانے والا میوہ</div>
+      <div class="rule"></div>
+      <p>All three pack sizes at a glance. Prices are per pack.</p>
+    </div>
+    <div class="best-grid" id="bestGrid"></div>
+  </div>
+</section>
+
+<!-- NutriCrunch pouches -->
+<section class="packs" id="packs">
+  <div class="wrap packs-grid">
+    <figure class="packs-photo"><img id="packsImg" alt="NutriCrunch pouches in white, black and kraft paper"></figure>
+    <div class="packs-copy">
+      <span class="eyebrow" style="color:var(--brass-soft)">NutriCrunch Pouches</span>
+      <h2>Your Choice, Packed in Our Pouch</h2>
+      <div class="urdu">آپ کی پسند کا میوہ، ہمارے پیک میں</div>
+      <p>Choose any dry fruit in a 250g, 500g or 1kg NutriCrunch zip pouch with a clear window. If your favourite is not on the list, any dry fruit can be packed on order.</p>
+      <div class="cta-row">
+        <a class="btn btn-brass" href="#shop">Browse the Range</a>
+        <a class="btn btn-line" id="customWa" href="#" target="_blank" rel="noopener">Ask for a Custom Pack</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="cats-sec" id="categories">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Shop by Category</span>
+      <h2>Find Your Favourite Mewa</h2>
+      <div class="urdu">اپنی پسند کا میوہ چنیں</div>
+      <div class="rule"></div>
+    </div>
+    <div class="cat-grid" id="catGrid">
+      <button class="cat-tile t-olive" data-cat="nuts"><img id="ct1" alt="" loading="lazy"><span class="lbl"><small>Almond · Kaju · Pista</small><b>Giri &amp; Nuts</b><span class="urdu">گری اور گریاں</span></span></button>
+      <button class="cat-tile t-rust" data-cat="dates"><img id="ct2" alt="" loading="lazy"><span class="lbl"><small>Soft &amp; sweet</small><b>Khajoor &amp; Dried Fruit</b><span class="urdu">کھجور اور خشک پھل</span></span></button>
+      <button class="cat-tile t-choc" data-cat="mix"><img id="ct3" alt="" loading="lazy"><span class="lbl"><small>Fruit + nuts</small><b>Mixed Mewa</b><span class="urdu">مکس میوہ جات</span></span></button>
+      <a class="cat-tile t-burg" href="#gifts"><img id="ct4" alt="" loading="lazy"><span class="lbl"><small>Eid · Shaadi · Family</small><b>Gift Boxes</b><span class="urdu">تحفے کے ڈبے</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Shop -->
+<section id="shop">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The Mewa Counter</span>
+      <h2>Our Dry Fruit Range</h2>
+      <div class="urdu">ہمارا میوہ، آپ کی صحت</div>
+      <div class="rule"></div>
+      <p>Every product comes in 250g, 500g and 1kg packs. <a href="#" id="customWa2" target="_blank" rel="noopener" style="text-decoration:underline;color:var(--maroon);font-weight:600">Not listed? Any dry fruit can be packed on order.</a></p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter products"></div>
+    <div class="toolbar">
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.500-3.500"/></svg>
+        <input type="search" id="searchBox" placeholder="Search almonds, dates, pista..." aria-label="Search products">
+      </div>
+      <div class="toolbar-right">
+        <span id="resultCount"></span>
+        <select id="sortBox" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="name">Name A to Z</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- Gift boxes -->
+<section class="gifts" id="gifts">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Tohfa · Gifting</span>
+      <h2>Gift Boxes for Every Occasion</h2>
+      <div class="urdu">تحفے کے ڈبے، محبت کی نشانی</div>
+      <div class="rule"></div>
+      <p>Four ready-made gift boxes at different prices, or build your own and add a card message.</p>
+    </div>
+
+    <div class="gift-grid" id="giftGrid"></div>
+
+    <div class="builder" id="builder">
+      <div class="col">
+        <h3>Build Your Own Box</h3>
+        <p class="sub">Pick a box, choose your mewa, add a message. Each pack is 250g.</p>
+
+        <div class="step-label"><span>1 · Choose the box</span></div>
+        <div class="opts" id="boxOpts"></div>
+
+        <div class="step-label"><span>2 · Choose your mewa</span><span id="pickCount"></span></div>
+        <div class="opts" id="itemOpts"></div>
+
+        <div class="step-label"><span>3 · Ribbon colour</span></div>
+        <div class="opts" id="ribbonOpts"></div>
+
+        <div class="step-label"><span>4 · Card message</span><span id="msgCount">0 / 80</span></div>
+        <textarea id="giftMsg" maxlength="80" placeholder="Eid Mubarak! Aap ke liye mohabbat ke saath..."></textarea>
+      </div>
+      <div class="col">
+        <h3>Your Box</h3>
+        <p class="sub">A live look at what you are gifting.</p>
+        <div class="card-preview">
+          <div class="eyebrow" id="prevBox">Classic Box</div>
+          <div class="urdu" id="prevMsg">آپ کے لیے، محبت کے ساتھ</div>
+        </div>
+        <ul class="summary" id="giftSummary"></ul>
+        <div class="hint" id="giftHint"></div>
+        <button class="btn btn-dark btn-block" id="addGift" style="margin-top:10px">Add Gift Box to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why NutriCrunch</span>
+      <h2>Sourced, Checked, Packed Fresh</h2>
+      <div class="urdu">ہمارا معیار، آپ کا اعتماد</div>
+      <div class="rule"></div>
+      <p>What we do before a pack reaches your door.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.200-6-10a6 6 0 0112 0c0 4.800-6 10-6 10z"/><circle cx="12" cy="11" r="2.200"/></svg></div>
+        <h3>Sourcing</h3><div class="urdu">میوہ کہاں سے آتا ہے</div>
+        <p class="todo"><b>Add your real details:</b> where each product comes from (country or region) and whether you buy direct or through a supplier.</p>
+      </div>
+      <div class="why">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.500"/><path d="M20 20l-4.500-4.500M8.500 11l2 2 3.500-4"/></svg></div>
+        <h3>Quality Checks</h3><div class="urdu">معیار کی جانچ</div>
+        <p class="todo"><b>Add your real details:</b> what you check before packing (size, moisture, smell and taste, foreign matter) and who does it.</p>
+      </div>
+      <div class="why">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
+        <h3>Packaging</h3><div class="urdu">محفوظ پیکنگ</div>
+        <p class="todo"><b>Add your real details:</b> pack type and material, how packs are sealed and labelled, and how gift boxes are prepared.</p>
+      </div>
+      <div class="why">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.500 2"/></svg></div>
+        <h3>Freshness</h3><div class="urdu">تازگی کا معیار</div>
+        <p class="todo"><b>Add your real details:</b> how long stock is kept, storage conditions, the pack date or best-before on the label, and what you do if a customer has a problem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="steps-sec" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" style="color:var(--brass-soft)">How to Order</span>
+      <h2>Four Simple Steps</h2>
+      <div class="urdu">آرڈر کا آسان طریقہ</div>
+      <div class="rule"></div>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Select products</h3><p>Choose 250g, 500g or 1kg packs, or pick a gift box and add your own ribbon and card message.</p></div>
+      <div class="step"><h3>Enter delivery details</h3><p>Open your tokri and add your name, phone number and full address.</p></div>
+      <div class="step"><h3>Confirm your order</h3><p>Check your total and tap Confirm. Your order opens in WhatsApp. Press send.</p></div>
+      <div class="step"><h3>Receive delivery</h3><p>We confirm payment and dispatch your order to your door. Delivery is free over Rs. 5,000.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Good to Know</h2>
+      <div class="urdu">اکثر پوچھے گئے سوالات</div>
+      <div class="rule"></div>
+    </div>
+    <div class="faq">
+      <details open><summary>What pack sizes do you sell?</summary><p>Every product comes in 250g, 500g and 1kg NutriCrunch pouches. Gift boxes are filled with 250g and 500g packs.</p></details>
+      <details><summary>Can you pack a dry fruit that is not listed?</summary><p>Yes. Any dry fruit can be packed on order. Message us on WhatsApp at 0339 8402017 with what you need and we will confirm the price.</p></details>
+      <details><summary>How does ordering work?</summary><p>Add items to your tokri, enter your delivery details and tap Confirm. Your order opens as a WhatsApp message to us. Press send, and we reply to confirm payment and dispatch.</p></details>
+      <details><summary>How much is delivery?</summary><p>Delivery is free on orders over Rs. 5,000. Below that, a flat Rs. 200 applies. We deliver across Pakistan.</p></details>
+      <details><summary>Can I add a message to a gift box?</summary><p>Yes. In the Build Your Own Box section you can choose a ribbon colour and write a card message of up to 80 characters, in English or Urdu.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="banner">
+  <div class="urdu">مہمان کی عزت، میوے کی طشتری</div>
+  <p>Fill the thaal. Welcome your guests the way it has always been done.</p>
+</div>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">
+          <span class="brand-mark"><img src="images/logo-mark.png" alt="" width="60" height="44"></span>
+          <span class="brand-text"><span class="brand-name">NutriCrunch</span><span class="brand-ur">نیوٹری کرنچ</span></span>
+        </div>
+        <p style="margin-top:12px;max-width:34ch;font-size:.92rem">Premium dry fruits, nuts and gift boxes, delivered to your door across Pakistan.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop">All Mewa Jaat</a></li>
+          <li><a href="#gifts">Gift Boxes</a></li>
+          <li><a href="#why">Why NutriCrunch</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Order &amp; Contact</h4>
+        <ul>
+          <li>WhatsApp: <a href="#" id="footWa" target="_blank" rel="noopener" style="text-decoration:underline">0339 8402017</a></li>
+          <li>Orders are confirmed on WhatsApp</li>
+          <li>Delivery: 2 to 5 working days</li>
+          <li>Cash on delivery available</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>&copy; 2026 NutriCrunch. Premium Dry Fruits. All Rights Reserved.</span>
+      <span>Photos via <a href="https://unsplash.com" target="_blank" rel="noopener" style="text-decoration:underline">Unsplash</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.600 15.100L2 22l5-1.300A10 10 0 1012 2zm5.200 14.200c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .3-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.9 2.200c.1.200.1.400 0 .5l-.4.600c-.2.200-.3.400-.1.700.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.5.100.7-.1l.9-1.100c.2-.3.400-.2.600-.1l2 1c.3.100.5.200.5.300.1.200.1.800-.1 1.300z"/></svg>
+</a>
+
+<!-- Cart drawer -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer-head">
+    <h3>Your Tokri <span class="urdu">آپ کی ٹوکری</span></h3>
+    <button class="icon-btn" id="closeCart" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot" id="cartFoot"></div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
